@@ -4,12 +4,14 @@ import Data.Map.Strict (Map)
 import qualified Data.Map.Strict as Map
 import qualified Day01 (solve)
 import qualified Day02 (solve)
+import qualified Day03 (solve)
 import System.Environment (getArgs)
 
 solutions :: Map String (String -> IO())
 solutions = Map.fromList
             [   ("01", Day01.solve)
             ,   ("02", Day02.solve)
+            ,   ("03", Day03.solve)
             ]
 
 solveProblem :: String -> IO ()
